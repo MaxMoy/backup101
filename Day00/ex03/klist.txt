@@ -1,0 +1,5 @@
+Credentials cache: API:29746
+        Principal: mmoyet@LE-101.FR
+
+  Issued                Expires             Flags    Principal
+Sep  5 15:50:13 2017  Sep 12 15:50:02 2017  FPIA   krbtgt/LE-101.FR@LE-101.FR

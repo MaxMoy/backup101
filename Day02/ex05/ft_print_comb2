@@ -1,0 +1,42 @@
+#include <unistd.h>
+
+void	ft_putchar(char c)
+{
+	write(1, &c, 1);
+}
+
+void ft_print_com2(void)
+{
+	int a;
+	int b;
+	int c;
+	int d;
+
+	d = 1;
+
+	while(c <= 9)
+	{
+		if(d <= 8)
+		{
+			ft_putchar('0' + c);
+			ft_putchar('0' + d);
+			ft_putchar(' ');
+			d++;
+		}
+		else
+		{
+			ft_putchar('0' + c);
+			ft_putchar('0' + d);
+			ft_putchar(' ');
+			c++;
+			d = 0;
+		}
+	}
+}
+
+int main()
+
+{
+	ft_print_com2();
+	return(0);
+}

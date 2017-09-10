@@ -1,0 +1,1 @@
+ldapsearch -Q "uid=*" | grep "cn: " | cut -d " " -f 3 | grep bon |wc -l
