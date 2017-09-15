@@ -1,35 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printalphabet.c                                 :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmoyet <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/09/08 15:54:33 by mmoyet            #+#    #+#             */
-/*   Updated: 2017/09/08 17:42:07 by mmoyet           ###   ########.fr       */
+/*   Created: 2017/09/14 09:40:32 by mmoyet            #+#    #+#             */
+/*   Updated: 2017/09/14 11:16:21 by mmoyet           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+void	ft_putchar(char a);
 
-void ft_putchar(char c)
+void	ft_putstr(char *str)
 {
-	write(1, &c ,1);
-}
+	int i;
 
-int main()
-	
-{
-	int 	i;
-	
 	i = 0;
-		
-	while(i<26)
+		while(str[i] !=  '\0')
 		{
-			ft_putchar('a'+i);
+			ft_putchar(str[i]);
 			i++;
 		}
-	ft_putchar('\n');
-	return(0);
 }
-

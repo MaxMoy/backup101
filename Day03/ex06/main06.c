@@ -1,51 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printalphabet.c                                 :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmoyet <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/09/08 15:54:33 by mmoyet            #+#    #+#             */
-/*   Updated: 2017/09/13 22:25:42 by mmoyet           ###   ########.fr       */
+/*   Created: 2017/09/14 10:16:53 by mmoyet            #+#    #+#             */
+/*   Updated: 2017/09/14 16:52:52 by mmoyet           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include <stdio.h>
 
-int			ft_putchar(char c);
+int		ft_strlen(char *str);
 
-void	ft_print(int a,int b,int c)
+int		main(void)
 {
-	ft_putchar('0' + a);
-	ft_putchar('0' + b);
-	ft_putchar('0' + c);
-	if(a != 7)
-	{
-		ft_putchar(',');
-		ft_putchar(' ');
-	}
-}
 
-void		ft_print_comb(void)
-{
-	int p;
-	int m;
-	int d;
-
-	while (p <= 9)
-	{
-		while (m <= 9)
-		{
-			while (d <= 9)
-			{
-				if (p < m && m < d)
-				{
-					
-				}
-				d++;
-			}
-			d = 0;
-			m++;
-		}
-		m = 0;
-		p++;
-	}
+	char *string;
+	string = "HelloHelloHello";
+	printf("%d" , (ft_strlen(string)));
+	return(0);
 }

@@ -1,28 +1,21 @@
-/* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_is_negative.c                                   :+:      :+:    :+:   */
+/*   main07.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmoyet <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/09/08 19:29:34 by mmoyet            #+#    #+#             */
-/*   Updated: 2017/09/13 22:12:23 by mmoyet           ###   ########.fr       */
+/*   Created: 2017/09/14 17:33:29 by mmoyet            #+#    #+#             */
+/*   Updated: 2017/09/14 18:17:46 by mmoyet           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_putchar(char c);
+#include <stdio.h>
 
-void ft_is_negative(int n)
+char	*ft_strrev(char *str);
 
+int		main(void)
 {
-	if(n<0)
-	{
-	ft_putchar('N');
-	ft_putchar('\n');
-	}
-	else
-	{
-	ft_putchar('P');
-	ft_putchar('\n');
-	}	
+	char string[] = "cimer";
+	printf("%s", ft_strrev(string));
+	return(0);
 }

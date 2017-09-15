@@ -1,32 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printalphabet.c                                 :+:      :+:    :+:   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmoyet <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/09/08 15:54:33 by mmoyet            #+#    #+#             */
-/*   Updated: 2017/09/08 17:00:03 by mmoyet           ###   ########.fr       */
+/*   Created: 2017/09/12 22:11:17 by mmoyet            #+#    #+#             */
+/*   Updated: 2017/09/13 22:04:39 by mmoyet           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <unistd.h>
 
-void ft_putchar(char c)
+void	ft_putchar(char c)
 {
-	write(1, &c ,1);
+	write(1, &c, 1);
 }
-
-void ft_print_reverse_alphabet(void)
-	
-{
-	int 	i;
-	
-	i = 0;
-		
-	while(i<26)
-		{
-			ft_putchar('a'+1);
-			i++;
-		}
-}
-

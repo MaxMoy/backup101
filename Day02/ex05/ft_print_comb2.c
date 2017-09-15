@@ -6,16 +6,11 @@
 /*   By: mmoyet <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/10 22:37:55 by mmoyet            #+#    #+#             */
-/*   Updated: 2017/09/12 14:30:06 by mmoyet           ###   ########.fr       */
+/*   Updated: 2017/09/13 22:28:42 by mmoyet           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
+void	ft_putchar(char c);
 
 void	ft_result(int i, int j, int k, int l)
 {
@@ -72,9 +67,3 @@ void	ft_print_comb2()
 	ft_count(a, b, c, d);
 }
 
-int main()
-
-{
-	ft_print_comb2();
-	return(0);
-}

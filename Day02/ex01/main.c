@@ -1,42 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_is_negative.c                                   :+:      :+:    :+:   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmoyet <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/09/08 19:29:34 by mmoyet            #+#    #+#             */
-/*   Updated: 2017/09/08 20:10:04 by mmoyet           ###   ########.fr       */
+/*   Created: 2017/09/12 22:11:17 by mmoyet            #+#    #+#             */
+/*   Updated: 2017/09/13 22:10:23 by mmoyet           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+void	ft_putchar(char c);
 
-void ft_putchar(char c)
-
-
-{
-	write(1, &c ,1);
-}
-
-void ft_is_negative(int n)
-
-{
-	if(n<0)
-	{
-	ft_putchar('N');
-	ft_putchar('\n');
-	}
-	else
-	{
-	ft_putchar('P');
-	ft_putchar('\n');
-	}	
-}
+void	ft_print_reverse_alphabet();
 
 int main()
-
 {
-	ft_is_negative(-2);
+	ft_print_reverse_alphabet();
 	return(0);
 }

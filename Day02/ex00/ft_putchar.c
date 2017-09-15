@@ -1,51 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printalphabet.c                                 :+:      :+:    :+:   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmoyet <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/09/08 15:54:33 by mmoyet            #+#    #+#             */
-/*   Updated: 2017/09/13 22:25:42 by mmoyet           ###   ########.fr       */
+/*   Created: 2017/09/13 22:02:04 by mmoyet            #+#    #+#             */
+/*   Updated: 2017/09/13 22:02:42 by mmoyet           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int			ft_putchar(char c);
+#include <unistd.h>
 
-void	ft_print(int a,int b,int c)
+void	ft_putchar(char c)
 {
-	ft_putchar('0' + a);
-	ft_putchar('0' + b);
-	ft_putchar('0' + c);
-	if(a != 7)
-	{
-		ft_putchar(',');
-		ft_putchar(' ');
-	}
+	write(1, &c ,1);
 }
 
-void		ft_print_comb(void)
-{
-	int p;
-	int m;
-	int d;
-
-	while (p <= 9)
-	{
-		while (m <= 9)
-		{
-			while (d <= 9)
-			{
-				if (p < m && m < d)
-				{
-					
-				}
-				d++;
-			}
-			d = 0;
-			m++;
-		}
-		m = 0;
-		p++;
-	}
-}
